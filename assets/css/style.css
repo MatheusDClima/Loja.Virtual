@@ -16,6 +16,8 @@
     --cor-btn-fonte:#000;
     --cor-fonte-corpo:#555;
     --cor-fonte-corpo-leve:#777;
+    --cor-fonte-corpo-verde:#abe8c3;
+    
 }
 
 body{
@@ -27,7 +29,7 @@ body{
 /*---------------BANNER E MENU-------------*/
 
 .banner{
-    background: radial-gradient(var(--cor-fonte-corpo-leve), var(--cor-btn-fonte));
+    background: radial-gradient(var(--cor-fonte-corpo-verde), var(--cor-btn-fonte));
 }
 
 .banner .linha{
@@ -101,7 +103,7 @@ p {
 }
 
 .col-2 span{
-    color: var(--cor-padrao-hover);
+    color: var(--cor-padrao);
 }
 
 .btn{
