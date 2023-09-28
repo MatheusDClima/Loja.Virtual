@@ -24,6 +24,8 @@ body{
 
 /*formatar linha a linha do html*/
 
+/*---------------BANNER E MENU-------------*/
+
 .banner{
     background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
 }
@@ -117,9 +119,14 @@ p {
     padding: 50px 0;
 }
 
+
+/*---------------CATEGORIAS-------------*/
+
+
 .categorias{
     margin: 70px 0;
 }
+
 
 .corpo-categorias{
     max-width: 1080px;
@@ -130,7 +137,7 @@ p {
 
 .col-3{
     flex-basis: 30%;
-    max-width: 250px;
+    min-width: 250px;
     margin-bottom: 30px;
 }
 
@@ -142,7 +149,7 @@ p {
 
 .col-4 {
     flex-basis: 25%;
-    max-width: 200px;
+    min-width: 200px;
     padding: 10px;
     margin-bottom: 50px;
     transition: transform 0.4s; /*aumento mais suave ao passar o mouse encima*/
@@ -157,3 +164,245 @@ p {
     object-fit: cover;
     object-position: center;
 }
+
+.titulo{
+    position: relative;
+    line-height: 60px;
+    margin: 0 auto 80px;
+    text-align: center;
+    color: var(--cor-fonte-corpo);
+}
+
+.titulo::after{ /*--LINHA ABAIXO DO TITULO--*/
+    content: '';
+    background-color: var(--cor-padrao);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: var(--cor-fonte-corpo);
+    font-weight: normal;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.classificacao ion-icon{  /*--CORES DAS ESTRELAS--*/
+    color: var(--cor-padrao);
+}
+
+/*---------------OFERTAS-------------*/
+
+.ofertas{
+    background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .oferta-img{
+    padding: 50px;
+
+}
+
+small{
+    color: var(--cor-btn-fonte);
+}
+
+/*---------------DEPOIMENTOS-------------*/
+
+.depoimentos{
+    padding-top: 100px;
+}
+
+.depoimentos .col-3{
+    text-align: center;
+    padding: 40px 20px; /*40px embaixo e encima, 20px esquerda e direita*/
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1) ;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.depoimentos .col-3:hover{
+    transform: scale(1.1);
+}
+
+.depoimentos .col-3 img{
+    width: 100px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border: 2px solid var(--cor-padrao);
+}
+
+.depoimento-icone{
+    font-size: 34px;
+    color: var(--cor-padrao);
+}
+
+.col-3 p{
+    font-size: 13px;
+    color: var(--cor-fonte-corpo-leve);
+    margin: 12px 0;
+}
+
+.depoimentos .col-3 h3{
+    font-size: 16px;
+    font-weight: 600px;
+    color: var(--cor-fonte-corpo);
+}
+
+/*-----------MARCAS------------*/
+
+.marcas{
+    margin: 100px auto;
+}
+
+.col-5{
+    width: 160px;
+}
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer; /*--PRA IMAGEM FICAR CLICÁVEL--*/
+    filter: grayscale(100%); /*--IMAGENS EM PRETO E BRANCO--*/
+}
+
+.col-5 img:hover{
+    filter: grayscale(0); /*--AO PASSAR O MOUSE POR CIMA DAS IMAGENS PRETO E BRANCO, ELAS VOLTAM A FICAR COLOORIDAS--*/
+}
+
+/*-----------RODAPÉ------------*/
+
+.rodape{
+    background: var(--cor-btn-fonte);
+    color: var(--cor-fonte);
+    padding: 60px 0 20px;
+    font-size: 14px;
+}
+
+.rodape p{
+    color: var(--cor-fonte);
+}
+
+.rodape h3{
+    color: var(--cor-fonte);
+    margin-bottom: 20px;
+}
+
+.rodape-col-1, .rodape-col-2, .rodape-col-3, .rodape-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.rodape-col-1{
+    flex-basis: 30%
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.rodape-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.rodape-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.rodape-col-3, .rodape-col-4{
+    flex-basis: 12%;
+    text-align: right;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.rodape hr{
+    border: none;
+    height: 1px;
+    background: var(--cor-fonte);
+    margin: 20px 0;
+}
+
+.direitos{
+    text-align: center;
+}
+
+/*----------TORNAR O MENU RESPONSIVO-----------*/
+
+.menu-celular{
+    width: 28px;
+    margin-left: 20px;
+    display: none; /* Pro menu não aparecer no site */
+}
+
+/*-------------MENU CELULAR-------------*/
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: var(--cor-btn-fonte);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: var(--cor-fonte);
+    }
+
+    .menu-celular{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/*-------------CELULAR até a máxima da tela de 600-------------*/
+
+@media only screen and (max-width:800px){
+    .linha{
+        text-align: center;
+    }
+
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+
+    .col-2{
+        font-size: 27px;
+    }
+
+    .rodape-col-3, .rodape-col-4{
+        text-align: center;
+    }
+
+    .col-4 p{
+        font-size: 24px;
+    }
+    
+
+    
+}
+
