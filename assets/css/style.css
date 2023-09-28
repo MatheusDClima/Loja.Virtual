@@ -27,7 +27,7 @@ body{
 /*---------------BANNER E MENU-------------*/
 
 .banner{
-    background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
+    background: radial-gradient(var(--cor-fonte-corpo-leve), var(--cor-btn-fonte));
 }
 
 .banner .linha{
@@ -86,6 +86,7 @@ p {
 .col-2{
     flex-basis: 50%;
     min-width: 300px;
+    color: var(--cor-fonte);
 }
 
 .col-2 h1{
@@ -96,13 +97,17 @@ p {
 
 .col-2 p{
     font-weight: 600;
-    color: var(--cor-btn-fonte);
+    color: var(--cor-fonte);
+}
+
+.col-2 span{
+    color: var(--cor-padrao-hover);
 }
 
 .btn{
     text-decoration: none;
-    color: var(--cor-fonte);
-    background: var(--cor-btn);
+    color: var(--cor-btn-hover);
+    background: var(--cor-fonte-corpo-leve);
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
@@ -117,6 +122,8 @@ p {
 .col-2 img{
     max-width: 100%;
     padding: 50px 0;
+    margin-left: 100px; /*-- Eu mudei--*/
+    margin-bottom: 20px;
 }
 
 
@@ -201,7 +208,7 @@ h4{
 /*---------------OFERTAS-------------*/
 
 .ofertas{
-    background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
+    background: radial-gradient(var(--cor-fonte-corpo-leve), var(--cor-btn-fonte));
     margin-top: 80px;
     padding: 30px 0;
 }
@@ -348,6 +355,7 @@ ul{
     width: 28px;
     margin-left: 20px;
     display: none; /* Pro menu não aparecer no site */
+    background: var(--cor-fonte-corpo-leve);
 }
 
 /*-------------MENU CELULAR-------------*/
@@ -376,6 +384,11 @@ ul{
     .menu-celular{
         display: block;
         cursor: pointer;
+        margin-bottom: 70px;
+    }
+
+    .carrinho-img{
+        margin-bottom: 70px;
     }
 }
 
@@ -392,6 +405,15 @@ ul{
 
     .col-2{
         font-size: 27px;
+    }
+
+    .col-2 img{
+        margin-left: 50px;
+
+    }
+
+    .col-3 img{
+        margin: auto;
     }
 
     .rodape-col-3, .rodape-col-4{
