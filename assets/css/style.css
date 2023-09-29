@@ -29,11 +29,11 @@ body{
 /*---------------BANNER E MENU-------------*/
 
 .banner{
-    background: radial-gradient(var(--cor-fonte-corpo-verde), var(--cor-btn-fonte));
+    background: radial-gradient(var(--cor-fonte-corpo-leve), var(--cor-btn-fonte));
 }
 
 .banner .linha{
-    margin-top: 70px;
+    margin-top: -60px;
 
 }
 
@@ -47,7 +47,7 @@ body{
 .navbar {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 nav {
@@ -77,6 +77,8 @@ nav ul li a{
 p {
     color: var(--cor-fonte-p);
 }
+
+/*--------TEXTO DO BANNER---------*/
 
 .linha{
     display: flex;
@@ -122,7 +124,7 @@ p {
 }
 
 .col-2 img{
-    max-width: 100%;
+    width: 100%;
     padding: 50px 0;
     margin-left: 100px; /*-- Eu mudei--*/
     margin-bottom: 20px;
@@ -154,7 +156,12 @@ p {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 50px; /*Alterado*/
+    margin-top: 20px;/*alterado*/
+    border: 2px solid var(--cor-padrao);/*alterado*/
 }
+
+/*---------PRODUTOS EM DESTAQUE-----------*/
 
 .col-4 {
     flex-basis: 25%;
@@ -212,16 +219,16 @@ h4{
 .ofertas{
     background: radial-gradient(var(--cor-fonte-corpo-leve), var(--cor-btn-fonte));
     margin-top: 80px;
-    padding: 30px 0;
+    padding: 1px 0;
 }
 
 .col-2 .oferta-img{
     padding: 50px;
-
+    margin: auto;
 }
 
 small{
-    color: var(--cor-btn-fonte);
+    color: var(--cor-btn-hover);
 }
 
 /*---------------DEPOIMENTOS-------------*/
@@ -387,11 +394,17 @@ ul{
         display: block;
         cursor: pointer;
         margin-bottom: 70px;
+
     }
 
     .carrinho-img{
-        margin-bottom: 70px;
+        margin-bottom: 72px;
     }
+
+    .banner .linha{
+        margin-top: -20px;
+    }
+
 }
 
 /*-------------CELULAR até a máxima da tela de 600-------------*/
@@ -409,9 +422,20 @@ ul{
         font-size: 27px;
     }
 
-    .col-2 img{
+    .col-2 img{ 
         margin-left: 50px;
+        width: 100%;
+        
+    }
 
+    .col-2 .casal-banner{
+       /* display: none; /*IMAGEM DO CASAL NÃO VAI APARECER*/
+    }
+
+    .col-2 .oferta-img{
+        padding: 50px;
+        width: 100%;
+        
     }
 
     .col-3 img{
