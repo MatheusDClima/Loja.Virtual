@@ -42,6 +42,7 @@ body{
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    padding: 15px;
 }
 
 .navbar {
@@ -124,19 +125,23 @@ p {
 }
 
 .col-2 img{
-    width: 100%;
-    padding: 50px 0;
-    margin-left: 100px; /*-- Eu mudei--*/
-    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    
+    padding: 0;
+    /*margin-bottom: -33px;*/
+    display: flex;
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
 }
 
 
 /*---------------CATEGORIAS-------------*/
 
 
-.categorias{
+/*.categorias{
     margin: 70px 0;
-}
+}*/
 
 
 .corpo-categorias{
@@ -152,14 +157,14 @@ p {
     margin-bottom: 30px;
 }
 
-.col-3 img{
+/*.col-3 img{
     width: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 50px; /*Alterado*/
-    margin-top: 20px;/*alterado*/
-    border: 2px solid var(--cor-padrao);/*alterado*/
-}
+   /* margin-top: 20px;/*alterado*/
+   /* border: 2px solid var(--cor-padrao);/*alterado*/
+/*}*/
 
 /*---------PRODUTOS EM DESTAQUE-----------*/
 
@@ -204,14 +209,17 @@ p {
 h4{
     color: var(--cor-fonte-corpo);
     font-weight: normal;
+    
 }
 
 .col-4 p{
-    font-size: 14px;
+    font-size: 24px;
+    
 }
 
 .classificacao ion-icon{  /*--CORES DAS ESTRELAS--*/
     color: var(--cor-padrao);
+    
 }
 
 /*---------------OFERTAS-------------*/
@@ -364,16 +372,20 @@ ul{
     width: 28px;
     margin-left: 20px;
     display: none; /* Pro menu não aparecer no site */
-    background: var(--cor-fonte-corpo-leve);
+    /*background: var(--cor-fonte-corpo-leve);*/
 }
 
 /*-------------MENU CELULAR-------------*/
 @media only screen and (max-width:800px){
+    /*.logo img{
+        margin-left: 150px;
+    }*/
+
     nav ul{
         position: absolute;
-        top: 70px;
+        top: 95px;
         left: 0;
-        background: var(--cor-btn-fonte);
+        background-color: rgba(0, 0, 0, 0.3);
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
@@ -393,12 +405,12 @@ ul{
     .menu-celular{
         display: block;
         cursor: pointer;
-        margin-bottom: 70px;
-
+        margin-bottom: 80px;
+        
     }
 
     .carrinho-img{
-        margin-bottom: 72px;
+        margin-bottom: 83px;
     }
 
     .banner .linha{
@@ -409,7 +421,7 @@ ul{
 
 /*-------------CELULAR até a máxima da tela de 600-------------*/
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:600px){
     .linha{
         text-align: center;
     }
@@ -418,29 +430,44 @@ ul{
         flex-basis: 100%;
     }
 
+    .col-2 h1{
+        font-size: 40px;
+        /*line-height: 60px;
+        margin: 30px 0;*/
+        margin-top: 85px;
+    }
+
     .col-2{
-        font-size: 27px;
+        font-size: 22px;
+        line-height: 33px;
     }
 
     .col-2 img{ 
-        margin-left: 50px;
         width: 100%;
+        /*margin-left: 50px;*/
+        /*margin-bottom: -50px;*/
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+        /*max-width: 100%;*/
         
+        /*justify-content: center; /* Centralizar horizontalmente */
+        /*align-items: center; /* Centralizar verticalmente */
     }
 
-    .col-2 .casal-banner{
-       /* display: none; /*IMAGEM DO CASAL NÃO VAI APARECER*/
-    }
+    /* .col-2 .casal-banner{
+       display: none; /*IMAGEM DO CASAL NÃO VAI APARECER
+    }*/
 
     .col-2 .oferta-img{
-        padding: 50px;
+        padding: 10px;
         width: 100%;
-        
     }
 
-    .col-3 img{
+    /*.col-3 img{
         margin: auto;
-    }
+    }*/
 
     .rodape-col-3, .rodape-col-4{
         text-align: center;
@@ -450,7 +477,14 @@ ul{
         font-size: 24px;
     }
     
-
+    .corpo-categorias {
+        padding: 95px;
+        margin-top: -63px;
+    }
     
-}
+    }
+
+    @media only screen and (max-width:600px){
+
+    }
 
