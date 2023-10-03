@@ -32,6 +32,10 @@ body{
     background: radial-gradient(var(--cor-fonte-corpo-leve), var(--cor-btn-fonte));
 }
 
+.logo img{
+    
+}
+
 .banner .linha{
     margin-top: -60px;
 
@@ -48,7 +52,7 @@ body{
 .navbar {
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 0; /*era 30px*/
 }
 
 nav {
@@ -128,7 +132,7 @@ p {
     max-width: 100%;
     height: auto;
     
-    padding: 0;
+    padding: 100px;
     /*margin-bottom: -33px;*/
     display: flex;
     justify-content: center; /* Centralizar horizontalmente */
@@ -402,6 +406,10 @@ ul{
         color: var(--cor-fonte);
     }
 
+    .logo img{
+        margin-top: -67px;
+    }
+
     .menu-celular{
         display: block;
         cursor: pointer;
@@ -431,15 +439,15 @@ ul{
     }
 
     .col-2 h1{
-        font-size: 40px;
-        /*line-height: 60px;
-        margin: 30px 0;*/
+        font-size: 28px;
+        line-height: 45px;
+        /*margin: 30px 0;*/
         margin-top: 85px;
     }
 
     .col-2{
-        font-size: 22px;
-        line-height: 33px;
+        font-size: 18px;
+        line-height: 24px;
     }
 
     .col-2 img{ 
@@ -474,7 +482,7 @@ ul{
     }
 
     .col-4 p{
-        font-size: 24px;
+        font-size: 20px;
     }
     
     .corpo-categorias {
