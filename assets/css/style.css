@@ -50,7 +50,7 @@ body{
 .navbar {
     display: flex;
     align-items: center;
-    padding: 0; /*era 30px*/
+    padding: 30px; /*era 30px*/
     margin-top: 40px;
 }
 
@@ -436,7 +436,7 @@ ul{
 
     nav ul{
         position: absolute;
-        top: 63px;
+        top: 105px;
         left: 0;
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
@@ -457,18 +457,18 @@ ul{
 
     .logo img{
         margin-top: -50px;
-       margin: -40px 0 -16px -40px;
+        margin: -17px 0 -22px -40px;
     }
 
     .menu-celular{
         display: block;
         cursor: pointer;
-        margin-bottom: -4px;
+        margin-bottom: 0;
         margin-left: -67px;
     }
 
     .carrinho-img{
-        margin-bottom: 0;
+        margin-bottom: 6px;
 
     }
 
@@ -486,6 +486,14 @@ ul{
 
     .novoMenu .logo img{
         margin: -52px 0 -50px -55px;
+    }
+
+    .novoMenu .carrinho-img {
+        margin-bottom: 5px;
+    }
+
+    .novoMenu .menu-celular{
+        margin-bottom: 0;
     }
 
     .linha2 {
