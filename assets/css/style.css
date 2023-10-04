@@ -47,6 +47,7 @@ body{
     padding-left: 25px;
     padding-right: 25px;
     padding: 15px;
+    margin-top: -40px;
 }
 
 .navbar {
@@ -132,7 +133,7 @@ p {
     max-width: 100%;
     height: auto;
     
-    padding: 100px;
+    padding: 50px;
     /*margin-bottom: -33px;*/
     display: flex;
     justify-content: center; /* Centralizar horizontalmente */
@@ -387,7 +388,7 @@ ul{
 
     nav ul{
         position: absolute;
-        top: 95px;
+        top: 63px;
         left: 0;
         background-color: rgba(0, 0, 0, 0.3);
         width: 100%;
@@ -447,7 +448,7 @@ ul{
 
     .col-2{
         font-size: 18px;
-        line-height: 24px;
+        line-height: 30px;
     }
 
     .col-2 img{ 
@@ -473,6 +474,11 @@ ul{
         width: 100%;
     }
 
+    .ofertas .col-2 p{
+        margin-top: 40px;
+        line-height: 30px;
+    }
+
     /*.col-3 img{
         margin: auto;
     }*/
@@ -486,13 +492,11 @@ ul{
     }
     
     .corpo-categorias {
-        padding: 95px;
+        padding: 108px;
         margin-top: -63px;
     }
     
     }
 
-    @media only screen and (max-width:600px){
-
-    }
+    
 
