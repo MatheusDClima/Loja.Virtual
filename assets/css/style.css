@@ -438,7 +438,7 @@ ul{
         position: absolute;
         top: 63px;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
@@ -463,12 +463,13 @@ ul{
     .menu-celular{
         display: block;
         cursor: pointer;
-        margin-bottom: 0;
-        
+        margin-bottom: -4px;
+        margin-left: -67px;
     }
 
     .carrinho-img{
         margin-bottom: 0;
+
     }
 
     .banner .linha{
@@ -479,8 +480,12 @@ ul{
         color: var(--cor-btn-fonte);
     }
 
+    .novoMenu nav ul li a{
+        color: var(--cor-fonte);
+    }
+
     .novoMenu .logo img{
-        margin: -52px 0 -50px -94px;
+        margin: -52px 0 -50px -55px;
     }
 
     .linha2 {
@@ -531,7 +536,7 @@ ul{
     }*/
 
     .col-2 .oferta-img{
-        padding: 10px;
+        padding: 30px;
         width: 100%;
     }
 
@@ -556,10 +561,13 @@ ul{
         padding: 0;
         margin-top: -63px;
     }
-    
-    .novoMenu nav ul li a{
-        color: var(--cor-btn-fonte);
+
+    .ofertas .corpo-categorias{
+        margin-top: 0;
+        padding: 15px;
     }
+    
+    
     }
 
     
