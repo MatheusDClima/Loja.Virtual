@@ -32,9 +32,6 @@ body{
     background: radial-gradient(var(--cor-fonte-corpo-leve), var(--cor-btn-fonte));
 }
 
-.logo img{
-    
-}
 
 .banner .linha{
     margin-top: -60px;
@@ -46,7 +43,7 @@ body{
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-    padding: 15px;
+    padding: 0;
     margin-top: -40px;
 }
 
@@ -54,6 +51,7 @@ body{
     display: flex;
     align-items: center;
     padding: 0; /*era 30px*/
+    margin-top: 40px;
 }
 
 nav {
@@ -356,6 +354,7 @@ small{
     text-align: right;
 }
 
+
 ul{
     list-style-type: none;
 }
@@ -369,6 +368,50 @@ ul{
 
 .direitos{
     text-align: center;
+}
+
+/*----------listagem de produtos----------*/
+
+.novoMenu nav ul li a{
+    color: var(--cor-btn-fonte);
+}
+
+.novoMenu{
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.linha2 {
+    margin: 100px auto 50px;
+    justify-content: space-between;
+}
+
+.linha2 select{
+    padding: 5px;
+    border: 1px solid var(--cor-padrao);
+}
+
+.linha2 select:focus{
+    outline: none;
+}
+
+.paginacao{
+    margin: 0 auto 80px;
+}
+
+.paginacao span{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid var(--cor-padrao);
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.paginacao span:hover{
+    background: var(--cor-padrao);
+    color: var(--cor-fonte);
 }
 
 /*----------TORNAR O MENU RESPONSIVO-----------*/
@@ -385,6 +428,11 @@ ul{
     /*.logo img{
         margin-left: 150px;
     }*/
+
+    .container{
+        padding: 25px;
+        margin: -30px 32px 0;
+    }
 
     nav ul{
         position: absolute;
@@ -408,22 +456,35 @@ ul{
     }
 
     .logo img{
-        margin-top: -67px;
+        margin-top: -50px;
+       margin: -40px 0 -16px -40px;
     }
 
     .menu-celular{
         display: block;
         cursor: pointer;
-        margin-bottom: 80px;
+        margin-bottom: 0;
         
     }
 
     .carrinho-img{
-        margin-bottom: 83px;
+        margin-bottom: 0;
     }
 
     .banner .linha{
         margin-top: -20px;
+    }
+
+    .novoMenu nav ul li a{
+        color: var(--cor-btn-fonte);
+    }
+
+    .novoMenu .logo img{
+        margin: -52px 0 -50px -94px;
+    }
+
+    .linha2 {
+        justify-content: space-around;
     }
 
 }
@@ -492,10 +553,13 @@ ul{
     }
     
     .corpo-categorias {
-        padding: 108px;
+        padding: 0;
         margin-top: -63px;
     }
     
+    .novoMenu nav ul li a{
+        color: var(--cor-btn-fonte);
+    }
     }
 
     
