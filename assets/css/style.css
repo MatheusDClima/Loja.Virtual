@@ -35,7 +35,6 @@ body{
 
 .banner .linha{
     margin-top: -60px;
-
 }
 
 .container {
@@ -89,12 +88,18 @@ p {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    text-align: left; /*adicionei depois*/
 }
+
 
 .col-2{
     flex-basis: 50%;
     min-width: 300px;
-    color: var(--cor-fonte);
+    color: var(--cor-fonte);/*mudar para color: var(--cor-fonte);*/
+}
+
+.col-2 h1, p {
+    text-align: left;
 }
 
 .col-2 h1{
@@ -105,7 +110,7 @@ p {
 
 .col-2 p{
     font-weight: 600;
-    color: var(--cor-fonte);
+    color: var(--cor-fonte); /*mudar para color: var(--cor-fonte);*/
 }
 
 .col-2 span{
@@ -130,7 +135,6 @@ p {
 .col-2 img{
     max-width: 100%;
     height: auto;
-    
     padding: 50px;
     /*margin-bottom: -33px;*/
     display: flex;
@@ -216,7 +220,7 @@ h4{
 }
 
 .col-4 p{
-    font-size: 24px;
+    font-size: 20px;
     
 }
 
@@ -344,6 +348,10 @@ small{
     text-align: center;
 }
 
+.rodape-col-2 p{
+    text-align: center;
+}
+
 .rodape-col-2 img{
     width: 180px;
     margin-bottom: 20px;
@@ -414,6 +422,165 @@ ul{
     color: var(--cor-fonte);
 }
 
+/*----------DETALHES DO PRODUTO-----------*/
+
+.ver-produto{
+    margin-top: 40px;
+}
+
+.ver-produto .col-2 h1{
+    color: var(--cor-btn-fonte);
+}
+
+.ver-produto .col-2{
+    color: var(--cor-btn-fonte);
+}
+
+.ver-produto .col-2 p{
+    color: var(--cor-btn-fonte);
+}
+
+.ver-produto .col-2 img{
+    width: 100%;
+    padding: 0;
+}
+
+.ver-produto #produtoImg{
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.ver-produto .col-2{
+    padding: 20px;
+}
+
+.ver-produto h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ver-produto select{
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid var(--cor-padrao);
+}
+
+.ver-produto select:focus{
+    outline: none;
+}
+
+.ver-produto input{
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    border: 1px solid var(--cor-padrao);
+}
+
+.ver-produto input:focus{
+    outline: none;
+}
+
+.ver-produto .btn{
+    border: none;
+    background-color: var(--cor-padrao);
+    height: 42px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ver-produto .btn:hover{
+    background-color: var(--cor-btn-hover);
+}
+
+.ver-produto p{
+    font-size: 13px;
+}
+
+.img-linha{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/*-----------CARRINHO DE COMPRAS----------*/
+
+.carrinho-compras{
+    margin: 80px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-carrinho{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    background-color: var(--cor-padrao);
+    color: var(--cor-fonte);
+    text-align: left;
+    font-weight: normal;
+    padding: 5px;
+}
+
+.info-carrinho small{
+    color: var(--cor-btn-fonte);
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color: var(--cor-padrao);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.valor-total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.valor-total table{
+    border-top: 3px solid var(--cor-padrao);
+    width: 100%;
+    max-width: 420px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
 /*----------TORNAR O MENU RESPONSIVO-----------*/
 
 .menu-celular{
@@ -468,7 +635,7 @@ ul{
     }
 
     .carrinho-img{
-        margin-bottom: 6px;
+        margin-bottom: 0;
 
     }
 
@@ -489,7 +656,7 @@ ul{
     }
 
     .novoMenu .carrinho-img {
-        margin-bottom: 5px;
+        margin-bottom: 0;
     }
 
     .novoMenu .menu-celular{
@@ -553,6 +720,10 @@ ul{
         line-height: 30px;
     }
 
+    .col-2 h1, p {
+        text-align: center;
+    }
+
     /*.col-3 img{
         margin: auto;
     }*/
@@ -575,6 +746,23 @@ ul{
         padding: 15px;
     }
     
+    .ver-produto .col-2{
+        margin: 5px 0; /*ERA 20px*/
+    }
+
+    .ver-produto .linha{
+        text-align: left;
+    }
+
+    .ver-produto h1{
+        font-size: 26px;
+        line-height: 26px;
+        margin: 0; /*adicionei o margin:0;*/
+    }
+
+    .info-carrinho p{
+        display: none;
+    }
     
     }
 
