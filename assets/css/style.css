@@ -789,8 +789,8 @@ th:last-child{
         /*margin-bottom: -50px;*/
         display: flex;
         padding: 0;
-        margin: 0;
-        margin-top: 20px;
+        margin: 0px;
+        margin-top: 0;
         /*max-width: 100%;*/
         
         /*justify-content: center; /* Centralizar horizontalmente */
