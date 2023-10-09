@@ -842,13 +842,15 @@ th:last-child{
     }
 
     .ver-produto .linha{
-        text-align: left;
+        text-align: center;
     }
 
     .ver-produto h1{
-        font-size: 26px;
+        font-size: 15px;
         line-height: 26px;
         margin: 0; /*adicionei o margin:0;*/
+        background-color: bisque;
+        padding: 7px;
     }
 
     .info-carrinho p{
