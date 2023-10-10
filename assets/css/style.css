@@ -430,6 +430,10 @@ ul{
 
 .ver-produto .col-2 h1{
     color: var(--cor-btn-fonte);
+    font-size: 20px;
+    background: wheat; 
+    margin: auto;
+    text-align: center;
 }
 
 .ver-produto .col-2{
