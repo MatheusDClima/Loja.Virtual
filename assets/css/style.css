@@ -50,7 +50,7 @@ body{
     display: flex;
     align-items: center;
     padding: 30px; /*era 30px*/
-    margin-top: 40px;
+    margin-top: 39px;
 }
 
 nav {
@@ -93,7 +93,7 @@ p {
 
 
 .col-2{
-    flex-basis: 50%;
+    flex-basis: 37%;
     min-width: 300px;
     color: var(--cor-fonte);/*mudar para color: var(--cor-fonte);*/
 }
@@ -135,7 +135,7 @@ p {
 .col-2 img{
     max-width: 100%;
     height: auto;
-    padding: 50px;
+    padding: 0px;
     /*margin-bottom: -33px;*/
     display: flex;
     justify-content: center; /* Centralizar horizontalmente */
@@ -179,7 +179,7 @@ p {
     flex-basis: 25%;
     min-width: 200px;
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     transition: transform 0.4s; /*aumento mais suave ao passar o mouse encima*/
 }
 
@@ -196,7 +196,7 @@ p {
 .titulo{
     position: relative;
     line-height: 60px;
-    margin: 30px auto 40px;
+    margin: 40px auto 60px;
     text-align: center;
     color: var(--cor-fonte-corpo);
 }
@@ -225,7 +225,7 @@ h4{
 }
 
 .classificacao ion-icon{  /*--CORES DAS ESTRELAS--*/
-    color: var(--cor-padrao);
+    color: goldenrod;
     
 }
 
@@ -403,7 +403,7 @@ ul{
 }
 
 .paginacao{
-    margin: 0 auto 80px;
+    margin: 40px auto 50px;
 }
 
 .paginacao span{
@@ -503,8 +503,9 @@ ul{
 }
 
 .ver-produto p{
-    font-size: 18px;
+    font-size: 12px;
     margin-bottom: 18px;
+    
 }
 
 .img-linha{
@@ -874,7 +875,7 @@ th:last-child{
 
     .ofertas .corpo-categorias{
         margin-top: 0;
-        padding: 15px;
+        padding: 40px;
     }
     
     .ver-produto .col-2{
