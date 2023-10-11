@@ -196,7 +196,7 @@ p {
 .titulo{
     position: relative;
     line-height: 60px;
-    margin: 0 auto 80px;
+    margin: 30px auto 40px;
     text-align: center;
     color: var(--cor-fonte-corpo);
 }
@@ -389,7 +389,7 @@ ul{
 }
 
 .linha2 {
-    margin: 100px auto 50px;
+    margin: 60px auto 50px;
     justify-content: space-between;
 }
 
@@ -503,7 +503,8 @@ ul{
 }
 
 .ver-produto p{
-    font-size: 13px;
+    font-size: 18px;
+    margin-bottom: 18px;
 }
 
 .img-linha{
@@ -692,8 +693,8 @@ th:last-child{
     }*/
 
     .container{
-        padding: 15px;
-        margin: -30px 32px 0;
+        padding: 1px;
+        margin: -40px 32px 0;
     }
 
     nav ul{
@@ -762,18 +763,52 @@ th:last-child{
         justify-content: space-around;
     }
 
+    .corpo-categorias {
+        padding: 0px;
+        margin-top: 0;
+        
+    }
+
+    .linha2 h2{
+        font-size: 20px;
+    }
+
+    .ver-produto select{
+        margin-left: 43px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+ 
+
 }
 
 /*-------------CELULAR até a máxima da tela de 600-------------*/
 
 @media only screen and (max-width:600px){
-    .linha{
-        text-align: center;
+
+    .corpo-categorias {
+        padding: 0px;
+        margin-top: 0;
+        
     }
 
-    .col-2, .col-3, .col-4{
-        flex-basis: 100%;
+    .linha{
+        text-align: center;
+        
     }
+
+    /*.linha .col-4{
+        grid-template-columns: repeat(2, 1fr);
+    }*/
+
+
+    /*.col-2, .col-3, .col-4{
+        flex-basis: 100%;
+        
+    }*/
+
 
     .col-2 h1{
         font-size: 28px;
@@ -794,7 +829,7 @@ th:last-child{
         display: flex;
         padding: 0;
         margin: 0px;
-        margin-top: 0;
+        margin-top: 10px;
         /*max-width: 100%;*/
         
         /*justify-content: center; /* Centralizar horizontalmente */
@@ -827,14 +862,15 @@ th:last-child{
         text-align: center;
     }
 
+    .col-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .col-4 p{
         font-size: 20px;
     }
     
-    .corpo-categorias {
-        padding: 60px;
-        margin-top: -35px;
-    }
+    
 
     .ofertas .corpo-categorias{
         margin-top: 0;
@@ -862,6 +898,7 @@ th:last-child{
     }
     
     }
+
 
     
 
