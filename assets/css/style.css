@@ -177,7 +177,7 @@ p {
 
 .col-4 {
     flex-basis: 25%;
-    min-width: 200px;
+    min-width: 160px;
     padding: 10px;
     margin-bottom: 15px;
     transition: transform 0.4s; /*aumento mais suave ao passar o mouse encima*/
