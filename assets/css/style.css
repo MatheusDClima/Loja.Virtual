@@ -88,7 +88,7 @@ p {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: left; /*adicionei depois*/
+    text-align: center; /*adicionei depois*/
 }
 
 
@@ -99,7 +99,7 @@ p {
 }
 
 .col-2 h1, p {
-    text-align: left;
+    text-align: center;
 }
 
 .col-2 h1{
@@ -122,9 +122,10 @@ p {
     color: var(--cor-btn-hover);
     background: var(--cor-fonte-corpo-leve);
     padding: 8px 30px;
-    margin: 30px 0;
+    margin: 15px 0;
     border-radius: 30px;
     transition: background 0.3s;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -242,6 +243,10 @@ h4{
     margin: auto;
 }
 
+.col-2 small{
+    text-align: left;
+}
+
 small{
     color: var(--cor-btn-hover);
 }
@@ -295,7 +300,7 @@ small{
 }
 
 .col-5{
-    width: 160px;
+    width: 250px;
 }
 
 .col-5 img{
@@ -520,6 +525,8 @@ ul{
 
 /*-----------CARRINHO DE COMPRAS----------*/
 
+
+
 .carrinho-compras{
     margin: 80px auto;
 }
@@ -738,6 +745,7 @@ th:last-child{
 
     .banner .linha{
         margin-top: -20px;
+        text-align: left;
     }
 
     .novoMenu nav ul li a{
@@ -874,6 +882,11 @@ th:last-child{
 
     .col-4 p{
         font-size: 20px;
+    }
+
+    .btn{
+        padding: 5px 5px;
+        margin: 12px;
     }
     
     
